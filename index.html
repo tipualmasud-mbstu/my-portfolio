@@ -1,80 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdullah Al Masud - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah Al Masud | Portfolio</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9fafc;
-      color: #333;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background: #f9f9f9;
+      color: #333;
     }
+
     header {
-      background-color: #2d6cdf;
+      text-align: center;
+      background: linear-gradient(120deg, #007bff, #0056b3);
       color: white;
-      padding: 20px 0;
+      padding: 2rem 1rem;
     }
-    img {
-      margin-top: 20px;
-      border-radius: 10px;
-      width: 160px;
-      height: 160px;
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
       object-fit: cover;
     }
-    .bio {
-      max-width: 600px;
-      margin: 20px auto;
-      line-height: 1.6;
-      font-size: 1.1em;
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
     }
-    .links {
-      margin-top: 30px;
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
     }
-    a {
-      display: block;
-      margin: 8px 0;
-      color: #2d6cdf;
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+
+    .links a {
+      display: inline-block;
       text-decoration: none;
-      font-weight: bold;
+      background: #007bff;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      margin-right: 0.7rem;
+      transition: 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .links a:hover {
+      background: #0056b3;
     }
+
     footer {
-      margin-top: 40px;
-      padding: 15px;
-      background: #eee;
-      color: #555;
-      font-size: 0.9em;
+      text-align: center;
+      padding: 1rem;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      .links a {
+        display: block;
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
+    <img src="assets/profile.jpg" alt="Profile Photo">
     <h1>Abdullah Al Masud</h1>
-    <p>Welcome to my personal webpage</p>
+    <p>Computer Science & Engineering | MBSTU | Aspiring Backend Developer</p>
   </header>
 
-  <img src="myphoto.jpg" alt="Photo of Abdullah Al Masud">
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm <strong>Abdullah Al Masud</strong>, a passionate CSE student at MBSTU with interests in backend development,
+        software engineering, and database systems. I enjoy solving practical problems using Java, Spring Boot, and SQL.
+      </p>
+    </section>
 
-  <div class="bio">
-    <p>Hello! I’m <strong>Abdullah Al Masud</strong>, a passionate Computer Science student interested in backend development, Java, and modern web technologies. This page contains links to my academic and professional work.</p>
-  </div>
+    <section>
+      <h2>My Work</h2>
+      <div class="links">
+        <a href="resume2.pdf" target="_blank">📄 Resume / CV</a>
+        <a href="best_ui.pdf" target="_blank">✨ Best UI Description</a>
+        <a href="worst_ui.pdf" target="_blank">⚠️ Worst UI Description</a>
+      </div>
+    </section>
 
-  <div class="links">
-    <h2>My Work</h2>
-    <a href="resume2.pdf" target="_blank">📄 View My Resume</a>
-    <a href="best_ui.pdf" target="_blank">💡 Best User Interface Essay</a>
-    <a href="worst_ui.pdf" target="_blank">⚠️ Worst User Interface Essay</a>
-  </div>
+    <section>
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:tipualmasud@gmail.com">tipualmasud@gmail.com</a></p>
+      <p>🌐 <a href="https://github.com/tipualmasud" target="_blank">GitHub Profile</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>📧 Contact: <a href="mailto:tipualmasud@gmail.com">tipualmasud@gmail.com</a></p>
-    <p>© 2025 Abdullah Al Masud</p>
+    © 2025 Abdullah Al Masud — All Rights Reserved.
   </footer>
 </body>
 </html>
